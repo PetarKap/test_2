@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace test_2
 {
-    public partial class Prikaz_učenika : Form
+    public partial class Statistika_razreda : Form
     {
-        public Prikaz_učenika()
+        public Statistika_razreda()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            string name = textBox1.Text;
-            List <string> names = Admin.SearhByName(name);
-
         }
     }
 }

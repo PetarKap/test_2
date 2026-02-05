@@ -21,5 +21,11 @@ namespace test_2
         {
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Unos_učenika unos = new Unos_učenika();
+            unos.ShowDialog();
+        }
     }
 }
