@@ -27,5 +27,17 @@ namespace test_2
             Unos_učenika unos = new Unos_učenika();
             unos.ShowDialog();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Prikaz_učenika prikaz = new Prikaz_učenika();
+            prikaz.ShowDialog();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Statistika_razreda statistika = new Statistika_razreda();
+            statistika.ShowDialog();
+        }
     }
 }

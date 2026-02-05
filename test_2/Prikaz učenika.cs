@@ -19,9 +19,13 @@ namespace test_2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            lstUcenici.Items.Clear();
             string name = textBox1.Text;
             List <string> names = Admin.SearhByName(name);
-
+            foreach (string s in names)
+            {
+                lstUcenici.Items.Add(s);
+            }
         }
     }
 }

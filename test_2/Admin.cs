@@ -16,9 +16,9 @@ namespace test_2
                 sw.WriteLine(zapis);    
             }
         }
-        public static List<string> LoadStudents()
+        public static  List<Student> LoadStudents()
         {
-            List<string> students = new List<string>();
+            List<Student> students = new List<Student>();
             if (File.Exists(filepath))
             {
                 using (StreamReader sr = new StreamReader(filepath))
@@ -35,9 +35,10 @@ namespace test_2
                             s.Razred = parts[3];
                             s.Broj_izostanaka =int.Parse(parts[4]);
                             s.Opravdano = int.Parse(parts[5]);
-                        };
+                            students.Add(s);
+                        }
 
-                        students.Add(line);
+                        
                     }
                 }
             }

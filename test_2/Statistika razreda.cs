@@ -16,5 +16,16 @@ namespace test_2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lstStats.Items.Clear();
+            List<Student> students = Admin.GetCountByRazred();
+            foreach (Student s in students)
+            {
+                lstStats.Items.Add(s);
+
+            }
+        }
     }
 }
