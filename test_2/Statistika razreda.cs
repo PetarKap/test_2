@@ -20,7 +20,8 @@ namespace test_2
         private void button1_Click(object sender, EventArgs e)
         {
             lstStats.Items.Clear();
-            List<Student> students = Admin.GetCountByRazred();
+            string mate = "1.a";
+            List<Student> students = Admin.GetCountByRazred(mate);
             foreach (Student s in students)
             {
                 lstStats.Items.Add(s);
